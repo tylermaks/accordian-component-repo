@@ -1,0 +1,67 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.accordian-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 66.6%;
+  width: 66.6%;
+}
+
+.left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fg-img {
+  position: relative;
+  left: -20%;
+}
+
+.bg-img {
+  position: relative;
+  left: -50%;
+  top: -33.3%;
+}
+/*# sourceMappingURL=App.css.map */
