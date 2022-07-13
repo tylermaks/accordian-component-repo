@@ -39,29 +39,27 @@ p{
 
 //ACCORDIAN CARD COMPONENT
 .accordian-card{ 
-    background: #fff;
     border-radius: 15px;
-    overflow: hidden;
+    margin-top: 10%;
 
-    height: 66.6%;
-    width: 66.6%;
+    min-height: 300px;
+    height: auto;
+    width: 80%;
 }
 
-//LEFT COLUMN
-.left-column{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.fg-img{
+//IMAGES
+.mobile-img{
     position: relative;
-    left: -20%;
+    top: -40%;
+
+    width: 80%;
+    max-width: 300px;
 }
 
-.bg-img{
+.mobile-shadow{
+    top: -65%;
     position: relative;
-    left: -50%;
-    top: -33.3%;
-
+    width: 80%;
+    max-width: 300px;
 }
