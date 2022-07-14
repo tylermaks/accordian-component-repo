@@ -1,11 +1,11 @@
 import React from "react"
 import './App.css';
-import AccordianCard from "./AccordianCard"
+import AccordionCard from "./AccordionCard"
 
 function App() {
   return (
     <div className="App">
-      <AccordianCard />
+      <AccordionCard />
     </div>
   );
 }

@@ -28,30 +28,90 @@ body {
   height: 100vh;
 }
 
+h1 {
+  margin-bottom: 1rem;
+}
+
 p {
   font-size: 12px;
   font-weight: 400;
 }
 
-.accordian-card {
+.accordion-card {
+  background-color: #fff;
   border-radius: 15px;
-  margin-top: 10%;
+  margin-top: 100px;
   min-height: 300px;
   height: auto;
-  width: 80%;
+  width: 85%;
+}
+
+.grid {
+  padding: 0 2rem;
+}
+
+.grid--left {
+  display: relative;
+  height: 125px;
 }
 
 .mobile-img {
-  position: relative;
-  top: -40%;
-  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60%;
   max-width: 300px;
 }
 
-.mobile-shadow {
-  top: -65%;
-  position: relative;
-  width: 80%;
-  max-width: 300px;
+.mobile-img--main {
+  top: 12.5%;
+}
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion-dropdown {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1rem 0;
+}
+
+.expand {
+  display: block;
+}
+
+.collapse {
+  display: none;
+}
+
+.accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.arrow {
+  height: 7.5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

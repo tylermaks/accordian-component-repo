@@ -32,34 +32,85 @@ body{
 }
 
 //TYPOGRAPHY & REUABLES
+h1{ 
+    margin-bottom: 1rem;
+}
+
 p{
     font-size: 12px;
     font-weight: 400;
 }
 
-//ACCORDIAN CARD COMPONENT
-.accordian-card{ 
+//CARD COMPONENT
+.accordion-card{ 
+    background-color: #fff;
     border-radius: 15px;
-    margin-top: 10%;
+    margin-top: 100px;
 
     min-height: 300px;
     height: auto;
-    width: 80%;
+    width: 85%;
 }
 
+.grid{
+    padding: 0 2rem;
+
+    &--left{
+        display: relative;
+        height: 125px;
+    }
+
+
+}
 
 //IMAGES
 .mobile-img{
-    position: relative;
-    top: -40%;
-
-    width: 80%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    width: 60%;
     max-width: 300px;
+
+    &--main{
+        top: 12.5%;
+    }
 }
 
-.mobile-shadow{
-    top: -65%;
-    position: relative;
-    width: 80%;
-    max-width: 300px;
+//ACCORDION COMPONENT
+.accordion{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.accordion-dropdown{
+    border-bottom: 1px solid $ltGray;
+    padding: 1rem 0;
+}
+
+.expand{ 
+    display:block;
+}
+
+.collapse{
+    display:none
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+.arrow{
+    height: 7.5px;
+
+    &:hover{ 
+        cursor: pointer;
+    }
+}
+
+
