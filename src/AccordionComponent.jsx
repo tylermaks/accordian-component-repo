@@ -5,25 +5,27 @@ import dropdownContent from "./dropdown-details"
 
 
 function Accordion() {
-    const [expand, setExpand] = useState(false)
-    // const[selected, setSelected] = useState(null)
+    const [expand, setExpand] = useState(null)
 
-    const handleClick = () => { 
-        setExpand(!expand)
+    const toggle = i => {
+        if(expand === i){
+            return setExpand(null)
+        }
+
+        setExpand(i)
     }
-
 
     return(
         <section className="accordion">
             <h1>FAQ</h1>
-            {dropdownContent.map( (obj, index) => (
+            {dropdownContent.map(obj => (
                 <Dropdown
+                    key={obj.key}
                     header= {obj.header}
                     body={obj.body}
-                    clicked={handleClick}
+                    id={obj.key}
+                    clicked={() => toggle(obj.key)}
                     expand={expand}
-                    // setSelected={() => setSelected(index)} 
-                    // selected={selected === index}
                 />
             ))}
         </section>

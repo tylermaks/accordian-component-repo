@@ -13,6 +13,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background-image: linear-gradient(#af67e9, #6565e7);
   font-family: 'Kumbh Sans', sans-serif;
+  padding: 2rem 0;
 }
 
 .App {
@@ -38,12 +39,18 @@ p {
 }
 
 .accordion-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
-  margin-top: 100px;
+  top: 150px;
   min-height: 300px;
   height: auto;
   width: 85%;
+  min-width: 325px;
+  max-width: 400px;
 }
 
 .grid {
@@ -60,12 +67,11 @@ p {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 60%;
-  max-width: 300px;
+  width: 225px;
 }
 
 .mobile-img--main {
-  top: 12.5%;
+  top: -100px;
 }
 
 .accordion {
@@ -83,7 +89,8 @@ p {
 
 .accordion-dropdown {
   border-bottom: 1px solid #e7e7e9;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 
 .expand {
@@ -107,11 +114,11 @@ p {
   padding: 1rem 0;
 }
 
-.arrow {
-  height: 7.5px;
+.accordion-header:hover {
+  cursor: pointer;
 }
 
-.arrow:hover {
-  cursor: pointer;
+.arrow {
+  height: 7.5px;
 }
 /*# sourceMappingURL=App.css.map */
