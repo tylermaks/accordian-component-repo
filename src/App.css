@@ -39,6 +39,13 @@ p {
 }
 
 .accordion-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   left: 0;
   right: 0;
@@ -58,7 +65,7 @@ p {
 }
 
 .grid--left {
-  display: relative;
+  position: relative;
   height: 125px;
 }
 
@@ -72,6 +79,10 @@ p {
 
 .mobile-img--main {
   top: -100px;
+}
+
+.desktop-img {
+  display: none;
 }
 
 .accordion {
@@ -120,5 +131,37 @@ p {
 
 .arrow {
   height: 7.5px;
+}
+
+@media screen and (min-width: 900px) {
+  .accordion-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+    overflow: hidden;
+    min-width: 800px;
+    max-width: none;
+    width: 75%;
+  }
+  .grid {
+    width: 50%;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    position: relative;
+  }
+  .desktop-img--main {
+    left: -160px;
+    z-index: 1;
+  }
+  .desktop-img--bg {
+    top: -700px;
+    left: -650px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

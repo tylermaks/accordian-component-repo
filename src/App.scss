@@ -44,6 +44,9 @@ p{
 
 //CARD COMPONENT
 .accordion-card{ 
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     left:0;
     right:0;
@@ -65,7 +68,7 @@ p{
    
 
     &--left{
-        display: relative;
+        position: relative;
         height: 125px;
     }
 }
@@ -81,7 +84,12 @@ p{
 
     &--main{
         top: -100px;
+        
     }
+}
+
+.desktop-img{
+    display:none;
 }
 
 //ACCORDION COMPONENT
@@ -122,3 +130,44 @@ p{
 }
 
 
+
+
+//MEDIA QUERIES
+@media screen and (min-width: 900px) {
+    //CONTAINER
+    .accordion-card{
+        flex-direction: row;
+
+        padding: 50px;
+        overflow: hidden;
+        min-width: 800px;
+        max-width: none;
+        width: 75%;
+    }
+
+    .grid{ 
+        width:50%;
+    }
+
+    //IMAGES
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img{
+        display: block;
+        position: relative;
+
+        &--main{
+            left: -160px;
+            z-index: 1;
+        }
+
+        &--bg{
+            top: -700px;
+            left: -650px;
+        }
+    }
+   
+
+}
